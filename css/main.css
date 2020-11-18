@@ -1,0 +1,19 @@
+body {
+  background-color: cornflowerblue;
+  text-align: center;
+}
+
+table {
+  width: 400px;
+  height: 400px;
+  table-layout: fixed;
+}
+
+/* tr {
+  line-height: 20px;
+  height: 20px;
+} */
+
+.floor {
+  background-color: lightblue;
+}
