@@ -7,12 +7,30 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body onload="initGame()">
+<div class="container">
 
-  <h2 class="timer">00</h2>
-  <!-- <span class="minutes"></span>:<span class="seconds"></span> -->
+<div class="smiley" onclick="restartGame()">🐒</div>
+
   <div class="board-container"></div>
 
+  <div class="game-content">
+    <div class="content-wrapper">
+      <h2 class="timer">00</h2>
+      <p>Let's start playing <br> Please choose your level:</p>
+      <button class="level-btn" onclick="levelChoose(1)"">Easy - 4 X 4<br> 120 Sec</button>
+      <button class="level-btn" onclick="levelChoose(2)">Medium - 8 X 8<br> 720 Sec</button>
+      <button class="level-btn" onclick="levelChoose(3)">Pro - 12 X 12<br> 1,800 Sec</button>
+      <p>You have:</p>
+      <hr>
+      <h2 class="lives">❤️ ❤️ ❤️</h2>
+      <hr>
+      <p>Lives.</p>
+    </div>
+  </div>
+  
+</div>
   <script src="js/utiles.js"></script>
+  <script src="js/checks.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

@@ -21,8 +21,10 @@ function getRandomIntInclusive(min, max) {
 function timer() {
   var startTime = Date.now();
   gGameInterval = setInterval(function () {
-    var elapsedTime = Date.now() - startTime;
-    document.querySelector('.timer').innerHTML = (elapsedTime / 1000).toFixed(0);
+   var elapsedTime = Date.now() - startTime;
+   var elTimer = document.querySelector('.timer').innerText = (elapsedTime / 1000).toFixed(0);
+    gGame.secsPassed = +elTimer;
+    checkIfTimeEnds();
   }, 1000);
 }
 
@@ -30,4 +32,10 @@ function preventRightClick() {
   document.addEventListener('contextmenu', function (rClick) {
     rClick.preventDefault();
   });
+}
+
+function getRandomLocation() {
+  var i = getRandomIntInclusive(0, gLevel.SIZE - 1);
+  var j = getRandomIntInclusive(0, gLevel.SIZE - 1);
+  return { i, j };
 }

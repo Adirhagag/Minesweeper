@@ -1,19 +1,93 @@
 body {
   background-color: cornflowerblue;
+  box-sizing: border-box;
+  margin: 0;
   text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  display: flex;
 }
 
 table {
-  width: 400px;
-  height: 400px;
+  width: 80vh;
+  height: 80vh;
   table-layout: fixed;
 }
 
-/* tr {
-  line-height: 20px;
-  height: 20px;
-} */
+.smiley {
+  position: absolute;
+  margin-top: 10px;
+  font-size: 50px;
+  width: 43vh;
+  text-align: right;
+  cursor: pointer;
+} 
 
-.floor {
+.board-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 10px;
+  width: 100vh;
+  height: 100vh;
+}
+
+.game-content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  background-color: gray;
+  width: 100vh;
+  height: 100vh;
+}
+
+.cell {
   background-color: lightblue;
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
+}
+
+.reveal {
+  background-color: blueviolet;
+}
+
+.content-wrapper {
+  width: 100vh;
+}
+
+.content-wrapper p {
+  font-size: 40px;
+}
+
+.level-btn {
+  background-color: cornflowerblue;
+  padding: 10px;
+  font-size: 20px;
+  outline: none;
+  cursor: pointer;
+  border-radius: 30px;
+  margin: 8px;
+}
+
+hr {
+  width: 150px;
+}
+
+.lives {
+  margin: 0;
+  margin-top: 15px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+
+img {
+  width: 30px;
+  height: 30px;
 }
